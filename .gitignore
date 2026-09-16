@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.ipynb_checkpoints/
+.DS_Store
+.obsidian/
+
+# Datos: no se versionan (derechos de uso de la fuente + tamaño).
+# Son 100% reproducibles ejecutando src/ingestion y src/features.
+data/bronze/*
+data/silver/*
+!data/**/.gitkeep
+!data/bronze/manifest.json
+
+# Sí se versionan los outputs (son la evidencia de los resultados del TFM)
+outputs/models/*.pkl
